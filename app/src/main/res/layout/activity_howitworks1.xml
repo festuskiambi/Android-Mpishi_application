@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimghwitworks" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/swipe"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Swipe Left Or Right"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:paddingTop="20dp"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="to see next recipe"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="250dp"
+            android:textAlignment="inherit"
+            android:background="#f08080"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
