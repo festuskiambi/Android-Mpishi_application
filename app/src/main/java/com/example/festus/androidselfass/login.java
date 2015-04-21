@@ -1,9 +1,13 @@
 package com.example.festus.androidselfass;
 
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.facebook.FacebookSdk;
 
 
 public class login extends ActionBarActivity {
@@ -12,6 +16,9 @@ public class login extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        FacebookSdk.sdkInitialize(getApplicationContext());
+
+
     }
 
 

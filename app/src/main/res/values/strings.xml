@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AndroidSelfAss</string>
 
-    <string name="hello_world">Hello world!</string>
+     <string name="app_id">1583356085235763</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_login">login</string>
