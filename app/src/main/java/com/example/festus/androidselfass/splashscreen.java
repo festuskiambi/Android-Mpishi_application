@@ -22,7 +22,7 @@ public class splashscreen extends ActionBarActivity {
                     sleep(5*1000);//time in seconds that the splash screen takes
 
 
-                    Intent intent = new Intent(getBaseContext(), howitworks1.class);
+                    Intent intent = new Intent(getBaseContext(), facebooklogin.class);
                     startActivity(intent);
                     finish();
                 }

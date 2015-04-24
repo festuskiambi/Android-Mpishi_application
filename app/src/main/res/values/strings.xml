@@ -9,4 +9,9 @@
     <string name="title_activity_howitworks2">howitworks2</string>
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_splashscreen">splashscreen</string>
+    <string name="title_activity_myhash">myhash</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_facebooklogin">facebooklogin</string>
+    <string name="title_activity_myhashgenerate">Myhashgenerate</string>
 </resources>

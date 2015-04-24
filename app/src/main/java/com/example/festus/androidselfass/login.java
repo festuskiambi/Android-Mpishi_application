@@ -1,3 +1,4 @@
+/*
 package com.example.festus.androidselfass;
 
 import android.content.pm.PackageInfo;
@@ -44,3 +45,4 @@ public class login extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+*/

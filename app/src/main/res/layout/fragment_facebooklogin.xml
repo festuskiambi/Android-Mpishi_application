@@ -17,15 +17,14 @@
             android:src="@drawable/logo"
             android:id="@+id/imageView" />
 
-        <ImageView
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:id="@+id/imageView2"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
             android:layout_below="@+id/imageView"
-            android:src="@drawable/fblogin"
-            android:layout_marginTop="85dp" />
+            android:layout_marginBottom="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,8 +34,7 @@
 
             android:textColor="#FFFFFF"
             android:id="@+id/textView"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/login_button"
             android:layout_marginTop="39dp" />
 
 
