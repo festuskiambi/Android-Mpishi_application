@@ -1,5 +1,6 @@
 package com.example.festus.androidselfass;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,32 +12,41 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
 import com.facebook.FacebookSdk;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 
 
-public class facebooklogin extends ActionBarActivity {
+public class facebooklogin extends Fragment {
+    public facebooklogin() {
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_facebooklogin);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-            FacebookSdk.sdkInitialize(getApplicationContext());
-        }
+        FacebookSdk.sdkInitialize(getActivity().getApplicationContext());
+
+    }
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_facebooklogin, container, false);
+        return rootView;
+
+    }
+    public void onViewCreated(View view, Bundle savedInstanceState){
+        super.onViewCreated(view, savedInstanceState);
+      LoginButton  loginButton = (LoginButton) view.findViewById(R.id.login_button);
+        loginButton.setReadPermissions("user_friends");
+        loginButton.setFragment(this);
+
     }
 
+}
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_facebooklogin, menu);
-        return true;
-    }
-
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -51,10 +61,12 @@ public class facebooklogin extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
+    *//**
      * A placeholder fragment containing a simple view.
-     */
+     *//*
     public static class PlaceholderFragment extends Fragment {
+
+
 
         public PlaceholderFragment() {
         }
@@ -64,6 +76,10 @@ public class facebooklogin extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_facebooklogin, container, false);
             return rootView;
+            loginButton = new LoginButton view.findViewById(R.id.login_button);
+            loginButton.setReadPermissions("user_friends");
+            // If using in a fragment
+            loginButton.setFragment(this);
         }
     }
-}
+}*/
